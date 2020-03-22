@@ -1,0 +1,72 @@
+body {
+    background-color: #32a852
+}
+
+.col-7 {
+   color: white;
+}
+
+#bankroll, #rollChange {
+    color: white;
+    display:inline-block;
+}
+
+#rollChange {
+    width: 25%;
+}
+
+label {
+    padding-right: 5px;
+}
+
+#dealerScore {
+    padding-top: 10px;
+}
+
+#dealerCardContainer {
+    background-color: #32a852;
+    height: 250px;
+}
+
+#userCardContainer {
+    background-color: #32a852;
+    height: 250px;
+}
+
+#hit {
+    margin-left: 10%;
+}
+
+#doubleDown {
+    margin-right: 10%;
+}
+
+#newHand {
+    width: 150px;
+    margin-left: calc(10% + 155px)
+}
+
+#wagerForm {
+    display: inline-block;
+    color: white;
+}
+
+#dealRow {
+    padding-top: 20px;
+}
+
+.choice {
+    width: 150px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #ba3d5f;
+    color: white;
+    border: 1.25px solid #FFFFFF;
+    border-radius: 8px;
+}
+
+button:hover {
+    border: 1.25px solid #d1cf8c;
+}

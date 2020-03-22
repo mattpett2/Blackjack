@@ -1,0 +1,85 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <link href="./css/styles.css" rel="stylesheet">
+
+        <title>Blackjack</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">BlackJack</a>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-7" id="wagerLabel">
+
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-7" id="dealerScore">
+                    Dealer Cards
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row" id="dealerCardRow">
+                <div class="col"></div>
+                <div class="col-7" id="dealerCardContainer">
+
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-7" id="userScore">
+                    User Cards
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row" id="userCardRow">
+                <div class="col"></div>
+                <div class="col-7" id="userCardContainer">
+
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row" id="footer">
+                <div class="col"></div>
+                <div class="col-7" id="choices">
+                    <button style="display:inline-block;opacity:0.2" class="choice" id="hit" onClick="hitCard()">Hit</button>
+                    <button style="display:inline-block;opacity:0.2" class="choice" id="stand" onClick="stand()">Stand</button>
+                    <button style="display:inline-block;opacity:0.2" class="choice" id="doubleDown" onClick="doubleDown()">Double Down</button>
+                </div>
+                <div class="col">
+                    <div id="bankroll"></div>
+                    <div id="rollChange"></div>
+                </div>
+            </div>
+            <div class="row" id="dealRow">
+                <div class="col"></div>
+                <div class="col-7" id="dealCol">
+                    <button style="display:inline-block" id="newHand" onClick="newHand()">Deal</button>
+                </div>
+                <div class="col">
+                    <form id="wagerForm" autocomplete="off" style="display:inline-block">
+                        <label for="wager">Wager</label><input autocomplete="off" type="text" id="wager" size="10"/>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    <script type="text/javascript" src="./js/blackjack.js"></script>
